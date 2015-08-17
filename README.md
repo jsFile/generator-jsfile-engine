@@ -1,4 +1,4 @@
-# generator-jsfile-engine [![Build Status](https://secure.travis-ci.org/jsFile/generator-jsfile-engine.png?branch=master)](https://travis-ci.org/webschik/generator-jsfile-engine)
+# generator-jsfile-engine [![Build Status](https://secure.travis-ci.org/jsFile/generator-jsfile-engine.png?branch=master)](https://travis-ci.org/jsFile/generator-jsfile-engine)
 
 ## Getting Started
 
