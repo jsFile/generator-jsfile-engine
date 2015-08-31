@@ -12,7 +12,7 @@ npm install -g yo
 To install generator-jsfile-engine from npm, run:
 
 ```bash
-npm install -g generator-jsfile-engine
+npm install generator-jsfile-engine
 ```
 
 Finally, initiate the generator:
