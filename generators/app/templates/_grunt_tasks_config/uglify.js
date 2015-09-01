@@ -5,8 +5,8 @@ module.exports = function () {
             report: false
         },
         engine: {
-            'src': 'dist/package.js',
-            'dest': 'dist/package.min.js'
+            'src': '<%= appBuildPath %>',
+            'dest': '<%= appMinifiedBuildPath %>'
         }
     };
 };

@@ -5,7 +5,9 @@ module.exports = function (grunt) {
             entry: "./src/index.js",
             output: {
                 path: "dist/",
-                filename: "package.js"
+                filename: "<%= appNameLowerCase %>.js",
+                library: ["<%= libName %>"],
+                libraryTarget: "umd"
             },
 
             module: {
@@ -20,9 +22,20 @@ module.exports = function (grunt) {
                 ]
             },
 
+            externals: [
+                {
+                    "jsfile": {
+                        root: "JsFile",
+                        commonjs2: "JsFile",
+                        commonjs: "JsFile",
+                        amd: "JsFile"
+                    }
+                }
+            ],
+
             stats: {
                 // Configure the console output
-                colors: false,
+                colors: true,
                 modules: true,
                 reasons: true
             },

@@ -1,7 +1,6 @@
 module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-webpack');
     grunt.loadNpmTasks('grunt-jscs');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
     /**
@@ -16,12 +15,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'jscs',
-        'jshint',
-        'webpack'
-    ]);
-
-    grunt.registerTask('build:min', [
-        'build',
+        'webpack',
         'uglify'
     ]);
 };
