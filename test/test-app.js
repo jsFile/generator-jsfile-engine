@@ -27,7 +27,7 @@ describe('jsfile-engine:app', function () {
             'grunt_tasks_config/uglify.js',
             'grunt_tasks_config/webpack.js',
 
-            'tests/unit/engine.spec.js',
+            'tests/unit/index.spec.js',
 
             'src/index.js',
             'LICENSE',

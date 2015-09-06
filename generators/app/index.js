@@ -12,7 +12,7 @@ var appFiles = [
     'grunt_tasks_config/webpack.js',
     'grunt_tasks_config/copy.js',
 
-    'tests/unit/engine.spec.js',
+    'tests/unit/index.spec.js',
 
     'src/index.js',
     'src/reader/createDocument.js',
