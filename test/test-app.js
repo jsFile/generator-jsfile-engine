@@ -4,7 +4,7 @@ var path = require('path');
 var assert = require('yeoman-generator').assert;
 var test = require('yeoman-generator').test;
 
-describe('jsfile-engine:app', function () {
+describe('jsfile-engine generator', function () {
     var appName = 'jsFile-ooxml';
     var moduleName = 'OoxmlEngine';
     var libName = 'JsFileOoxml';
