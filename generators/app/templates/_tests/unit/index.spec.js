@@ -2,7 +2,7 @@ import chai from 'chai';
 import chaiJsonSchema from 'chai-json-schema';
 import schemas from 'jsfile-schemas';
 import JsFile from 'JsFile';
-import <%= moduleName %> from './../../<%= appBuildPath %>';
+import <%= moduleName %> from './../../src/index';
 
 chai.use(chaiJsonSchema);
 const assert = chai.assert;

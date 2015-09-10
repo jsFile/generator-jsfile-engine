@@ -11,6 +11,7 @@ var appFiles = [
     'grunt_tasks_config/uglify.js',
     'grunt_tasks_config/webpack.js',
     'grunt_tasks_config/copy.js',
+    'grunt_tasks_config/blobify.js',
 
     'tests/unit/index.spec.js',
 
