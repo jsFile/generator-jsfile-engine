@@ -19,7 +19,8 @@ describe('<%= appName %>', () => {
         assert.isFunction(<%= moduleName %>);
     });
 
-    it('should read the file', () => {
+    it('should read the file', function () {
+        this.timeout(15000);
         const queue = [];
         let name;
         for (name in files) {
