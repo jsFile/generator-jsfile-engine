@@ -1,6 +1,6 @@
 {
     "name": "generator-jsfile-engine",
-    "version": "0.1.12",
+    "version": "0.1.13",
     "description": "Yeoman generator for engine of jsFile.js library",
     "license": "MIT",
     "main": "app/index.js",
