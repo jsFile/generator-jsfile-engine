@@ -1,11 +1,12 @@
 {
     "name": "<%= appNameLowerCase %>",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "<%= appName %>",
     "main": "<%= appBuildPath %>",
     "scripts": {
         "test": "./node_modules/.bin/grunt blobify && ./node_modules/.bin/karma start",
-        "build": "./node_modules/.bin/grunt build"
+        "build": "./node_modules/.bin/grunt build",
+        "preinstall": "npm install chai-json-schema"
     },
     "keywords": [],
     "devDependencies": {
