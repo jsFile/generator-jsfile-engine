@@ -38,7 +38,7 @@ describe('<%= appName %>', () => {
                 function done (result) {
                     assert.instanceOf(result, JsFile.Document, name);
                     const json = result.json();
-                    assert.jsonSchema(json, documentSchema, name);
+                    assert.jsonSchema(json.content, documentSchema, name);
                     const isEmpty = !/textContent":"[^"]+"/.test(JSON.stringify(json));
                     assert.isFalse(isEmpty, 'File ' + name + 'shouldn\'t be empty');
                 }
