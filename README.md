@@ -1,4 +1,4 @@
-# generator-jsfile-engine [![Build Status](https://secure.travis-ci.org/jsFile/generator-jsfile-engine.png?branch=master)](https://travis-ci.org/jsFile/generator-jsfile-engine)
+# generator-jsfile-engine [![Build Status](https://secure.travis-ci.org/jsFile/generator-jsfile-engine.png?branch=master)](https://travis-ci.org/jsFile/generator-jsfile-engine) [![Coverage Status](https://coveralls.io/repos/jsFile/generator-jsfile-engine/badge.svg?branch=master&service=github)](https://coveralls.io/github/jsFile/generator-jsfile-engine?branch=master)
 
 ## Getting Started
 
