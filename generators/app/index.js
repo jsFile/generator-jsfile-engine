@@ -6,10 +6,12 @@ var appFiles = [
     'package.json',
     'Gruntfile.js',
     'karma.conf.js',
+    '.jscsrc',
+    '.eslintrc',
+    '.babelrc',
+    'webpack.config.js',
 
-    'grunt_tasks_config/jscs.js',
     'grunt_tasks_config/uglify.js',
-    'grunt_tasks_config/webpack.js',
     'grunt_tasks_config/copy.js',
     'grunt_tasks_config/blobify.js',
 
@@ -20,13 +22,13 @@ var appFiles = [
     'README.md'
 ];
 
-function _toCamelCase (str) {
+function toCamelCase (str) {
     return (str || '').replace(/[-_]+([^_-])/g, function ($1, $2) {
         return $2.toUpperCase();
     });
 }
 
-module.exports = yeoman.generators.Base.extend({
+var Generator = yeoman.generators.Base.extend({
     constructor: function () {
         yeoman.generators.Base.apply(this, arguments);
 
@@ -43,7 +45,7 @@ module.exports = yeoman.generators.Base.extend({
         app: function () {
             var appName = this.appName || '';
             var appNameLowerCase = appName.toLowerCase();
-            var libName = _toCamelCase(appName).replace(/jsfile/i, 'JsFile');
+            var libName = toCamelCase(appName).replace(/jsfile/i, 'JsFile');
             var moduleName = appName.split('-').pop().toLowerCase() + 'Engine';
             moduleName = moduleName[0].toUpperCase() + moduleName.slice(1);
 
@@ -81,3 +83,7 @@ module.exports = yeoman.generators.Base.extend({
         });
     }
 });
+
+Generator.appFiles = appFiles;
+
+module.exports = Generator;

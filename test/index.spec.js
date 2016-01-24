@@ -3,6 +3,7 @@
 var path = require('path');
 var assert = require('yeoman-generator').assert;
 var test = require('yeoman-generator').test;
+var Generator = require('./../generators/app/index');
 
 describe('jsfile-engine generator', function () {
     var appName = 'jsFile-ooxml';
@@ -17,29 +18,11 @@ describe('jsfile-engine generator', function () {
     });
 
     it('creates files', function () {
-        assert.file([
-            'package.json',
-            'Gruntfile.js',
-            'karma.conf.js',
-            '.travis.yml',
-
-            'grunt_tasks_config/jscs.js',
-            'grunt_tasks_config/uglify.js',
-            'grunt_tasks_config/webpack.js',
-            'grunt_tasks_config/copy.js',
-            'grunt_tasks_config/blobify.js',
-
-            'tests/unit/index.spec.js',
-
-            'src/index.js',
-            'LICENSE',
-            'README.md'
-        ]);
+        assert.file(Generator.appFiles);
     });
 
     it('sets a app name', function () {
         assert.fileContent('package.json', new RegExp(appName.toLowerCase()));
         assert.fileContent('src/index.js', new RegExp(moduleName));
-        assert.fileContent('grunt_tasks_config/webpack.js', new RegExp(libName));
     });
 });
