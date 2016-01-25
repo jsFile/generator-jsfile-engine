@@ -5,9 +5,7 @@
 ### Yeoman
 
 ```bash
-npm install -g yo engineName
-
-#npm install -g yo jsFile-rtf
+npm install -g yo
 ```
 
 ### jsFile Engine Generator
@@ -20,7 +18,9 @@ npm install generator-jsfile-engine
 Finally, initiate the generator:
 
 ```bash
-yo jsfile-engine
+yo jsfile-engine engineName
+
+#yo jsfile-engine jsFile-rtf
 
 ## License
 
