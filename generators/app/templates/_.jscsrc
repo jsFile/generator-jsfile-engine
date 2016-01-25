@@ -3,6 +3,7 @@
     "disallowQuotedKeysInObjects": "allButReserved",
     "validateIndentation": 4,
     "validateQuoteMarks": "'",
+    "validateLineBreaks": null,
     "disallowSpacesInFunctionDeclaration": null,
     "disallowSpacesInFunctionExpression": null,
     "disallowSpacesInAnonymousFunctionExpression": null,
