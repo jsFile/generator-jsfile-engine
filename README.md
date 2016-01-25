@@ -21,6 +21,7 @@ Finally, initiate the generator:
 yo jsfile-engine engineName
 
 #yo jsfile-engine jsFile-rtf
+```
 
 ## License
 
