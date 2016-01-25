@@ -5,7 +5,9 @@
 ### Yeoman
 
 ```bash
-npm install -g yo
+npm install -g yo engineName
+
+#npm install -g yo jsFile-rtf
 ```
 
 ### jsFile Engine Generator
