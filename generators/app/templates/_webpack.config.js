@@ -3,8 +3,8 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: "dist/",
-        filename: "jsfile-epub.js",
-        library: ["JsFileEpub"],
+        filename: "<%= appNameLowerCase %>.js",
+        library: ["<%= libName %>"],
         libraryTarget: "umd"
     },
 
