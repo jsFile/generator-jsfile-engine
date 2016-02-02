@@ -1,5 +1,5 @@
 import JsFile from 'JsFile';
 
-export default function (data) {
+export default function createDocument (data) {
 
 };
