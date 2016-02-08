@@ -1,6 +1,6 @@
 import OoxmlEngine from './../../src/index';
 
-describe('jsFile-ooxml', () => {
+describe('<%= appName %>', () => {
     describe('Library imports', () => {
         it('should import JS module', () => {
             assert.isFunction(<%= moduleName %>);
