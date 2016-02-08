@@ -13,10 +13,7 @@ describe('<%= appName %>', () => {
 
     before(() => {
         files = window.files;
-    });
-
-    it('should exist', () => {
-        assert.isFunction(<%= moduleName %>);
+        JsFile.defineEngine(<%= moduleName %>);
     });
 
     it('should have files for testing', () => {
