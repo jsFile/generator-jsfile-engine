@@ -1,4 +1,4 @@
-import OoxmlEngine from './../../src/index';
+import <%= moduleName %> from './../../src/index';
 
 describe('<%= appName %>', () => {
     describe('Library imports', () => {
