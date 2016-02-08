@@ -7,7 +7,7 @@ describe('<%= appName %>', () => {
         });
 
         it('should exist in global scope', () => {
-            assert.isFunction(window['<%= moduleName %>'].default);
+            assert.isFunction(window['<%= libName %>'].default);
         });
     });
 });
